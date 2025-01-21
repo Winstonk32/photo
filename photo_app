@@ -1,0 +1,8 @@
+<script>start("c:\\Users\\HP ZBOOK\\Desktop\\week2 django\\photo_app\\");</script>
+<script>onHasParentDirectory();</script>
+<script>addRow("__pycache__","__pycache__",1,0,"0 B",1737462642,"1/21/25, 3:30:42 PM");</script>
+<script>addRow("__init__.py","__init__.py",0,0,"0 B",1737462642,"1/21/25, 3:30:42 PM");</script>
+<script>addRow("asgi.py","asgi.py",0,411,"411 B",1737463167,"1/21/25, 3:39:27 PM");</script>
+<script>addRow("settings.py","settings.py",0,4255,"4.2 kB",1737463175,"1/21/25, 3:39:35 PM");</script>
+<script>addRow("urls.py","urls.py",0,1453,"1.4 kB",1737463179,"1/21/25, 3:39:39 PM");</script>
+<script>addRow("wsgi.py","wsgi.py",0,411,"411 B",1737463184,"1/21/25, 3:39:44 PM");</script>
