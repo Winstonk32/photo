@@ -13,6 +13,12 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 from pathlib import Path
 
 
+
+import dj_database_url
+
+
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -98,15 +104,9 @@ WSGI_APPLICATION = 'photo_app.wsgi.application'
 # }
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'socialmedia',
-        'USER': 'media',
-        'PASSWORD': '123456789',
-        'HOST': 'localhost',
-        'PORT': '5432',
-    }
+    'default': dj_database_url.parse("postgresql://calorie_7dh8_user:OqZ26cloao3b5OsbaGOsajsItrDMnG6p@dpg-cu1q743tq21c73bk9aig-a.oregon-postgres.render.com/calorie_7dh8")
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
@@ -138,6 +138,7 @@ USE_I18N = True
 
 USE_TZ = True
 
+import os
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
@@ -155,6 +156,7 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 MEDIA_ROOT = BASE_DIR / 'static/images'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
+
 
 
 # Default primary key field type
