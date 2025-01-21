@@ -12,8 +12,6 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 
-
-
 import dj_database_url
 
 
@@ -32,12 +30,13 @@ SECRET_KEY = 'django-insecure-z433vb&%lv&vdq88$ux8bcns9t)rx1e^!&)@gv&h3awaxjm_^(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'photos',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -45,7 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'cloudinary',
-    'photos',
+    
 ]
 CLOUDINARY = {
     'cloud_name': 'dvyajjkya',
@@ -107,7 +106,7 @@ DATABASES = {
     'default': dj_database_url.parse("postgresql://calorie_7dh8_user:OqZ26cloao3b5OsbaGOsajsItrDMnG6p@dpg-cu1q743tq21c73bk9aig-a.oregon-postgres.render.com/calorie_7dh8")
 }
 
-
+AUTH_USER_MODEL = "photos.User"
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 
