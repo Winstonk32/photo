@@ -106,7 +106,7 @@ DATABASES = {
     'default': dj_database_url.parse("postgresql://calorie_7dh8_user:OqZ26cloao3b5OsbaGOsajsItrDMnG6p@dpg-cu1q743tq21c73bk9aig-a.oregon-postgres.render.com/calorie_7dh8")
 }
 
-AUTH_USER_MODEL = "photos.User"
+#AUTH_USER_MODEL = "photos.User"
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 
