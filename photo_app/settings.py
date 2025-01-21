@@ -39,9 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'cloudinary',
-    'cloudinary_storage',
     'photos',
-    'storages',
 ]
 CLOUDINARY = {
     'cloud_name': 'dvyajjkya',
@@ -102,9 +100,9 @@ WSGI_APPLICATION = 'photo_app.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'photodb',
-        'USER': 'postgres',
-        'PASSWORD': '12345',
+        'NAME': 'socialmedia',
+        'USER': 'media',
+        'PASSWORD': '123456789',
         'HOST': 'localhost',
         'PORT': '5432',
     }
